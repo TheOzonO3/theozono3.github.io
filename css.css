@@ -1,3 +1,49 @@
-body {
+body{
     background: black;
+}
+.main {
+    color: whitesmoke;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    font-family: 'Oxanium', cursive;
+}
+audio {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+}
+a {
+    color: whitesmoke!important;
+    text-decoration: none
+}
+.player{
+    color: whitesmoke;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.75em;
+    font-family: 'Oxanium', cursive;
+}
+.small {
+    color: whitesmoke;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.75em;
+    font-family: 'Oxanium', cursive;
+}
+.icons {
+    color: whitesmoke;
+    font-size: 1.75em;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

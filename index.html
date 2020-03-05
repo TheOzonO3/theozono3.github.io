@@ -3,8 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css.css">
-    </head>
+        <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1f9cc497c9.js" crossorigin="anonymous"></script>    </head>
     <body>
-        Test
+        <div class="main">Ozon</div>
+        <div class="small">Soon</div>
+        <span class="icons">
+            <i class="fab fa-discord"></i>
+            <a href="https://vk.com/the_ozon">
+                <i class="fab fa-vk"></i>
+            </a>
+            <i class="fab fa-telegram"></i>
+            <i class="fab fa-steam"></i>
+        </span>
+        <span class="player">
+            <i onclick="document.getElementById('audio').play()" class="fas fa-play-circle"></i>
+            <i onclick="document.getElementById('audio').pause(); console.log(document.getElementById('audio').duration)" class="fas fa-pause-circle"></i>
+            <i onclick="document.getElementById('audio').muted=!document.getElementById('audio').muted" class="fas fa-volume-mute"></i>
+            <span id="csec"></span>
+            <audio loop autoplay src="audio/music.mp3" id="audio" type="audio/ogg"></audio>    
+            <script>
+                console.log(document.getElementById('audio').duration)
+            </script>
+        </span>  
     </body>
 </html>
