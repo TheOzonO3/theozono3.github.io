@@ -65,35 +65,35 @@ ul {
 .ion {
     list-style: none;
     background: no-repeat url(./img/ion_b.svg);
-    padding-left: 24px;
+    padding-left: 1.25em;
 }
 .blast {
     list-style: none;
     background: no-repeat url(./img/blast_b.svg);
-    padding-left: 24px;
+    padding-left: 1.25em;
 }
 .sla {
     list-style: none;
     background: no-repeat url(./img/slash_b.svg);
-    padding-left: 24px;
+    padding-left: 1.25em;
 }
 .punct {
     list-style: none;
     background: no-repeat url(./img/punct_b.svg);
-    padding-left: 24px;
+    padding-left: 1.25em;
 }
 .beam {
     list-style: none;
     background: no-repeat url(./img/beam_b.svg);
-    padding-left: 24px;
+    padding-left: 1.25em;
 }
 .ray {
     list-style: none;
     background: no-repeat url(./img/ray_b.svg);
-    padding-left: 24px;
+    padding-left: 1.25em;
 }
 .impact {
     list-style: none;
     background: no-repeat url(./img/imp_b.svg);
-    padding-left: 24px;
+    padding-left: 1.25em;
 }
