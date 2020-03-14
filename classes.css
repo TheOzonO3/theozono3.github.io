@@ -30,23 +30,28 @@ header {
     background-color:rgba(0, 171, 238, 0.1);
     border-style: hidden hidden hidden solid;
     padding-bottom: 5px;
-    width: calc(100% - 28px);
+    width: 98.505%;
+    padding-left: 5px;
 }
 .skillname{
     list-style: none;
+    list-style-type: none;
 }
 li {
     transform: translate(-1.25em, 0)
 }
 ul {
-    border: rgba(0, 171, 238, 1);
-    background-color:rgba(0, 171, 238, 0.1);
-    border-style: hidden hidden hidden solid;
-    padding-bottom: 5px;
-    position: relative;
-    top: 0.5em;
-    left: 0.65em;
-    border-width: 0.2em;
+	border: rgba(0, 171, 238, 1);
+	background-color: rgba(0, 171, 238, 0.1);
+	border-style: hidden hidden hidden solid;
+	padding-bottom: 5px;
+	position: relative;
+	top: 0.5em;
+	left: 0.65em;
+	border-width: 0.2em;
+    padding-left: 25px;
+    padding-top: 5px;
+    width: 97%;
 }
 .classdiv {
     display: none;
@@ -67,57 +72,67 @@ ul {
 }
 .none {
     list-style: none;
+    list-style-type: none;
     padding-left: 0em;
 }
 .ion {
     list-style: none;
+    list-style-type: none;
     background: no-repeat url(./img/ion_b.svg);
     padding-left: 1.25em;
-    transform: translate(0,0);
+    transform: none;
 }
 .blast {
     list-style: none;
+    list-style-type: none;
     background: no-repeat url(./img/blast_b.svg);
     padding-left: 1.25em;
-    transform: translate(0,0);
+    transform: none;
 }
 .sla {
     list-style: none;
+    list-style-type: none;
     background: no-repeat url(./img/slash_b.svg);
     padding-left: 1.25em;
-    transform: translate(0,0);
+    transform: none;
 }
 .punct {
     list-style: none;
+    list-style-type: none;
     background: no-repeat url(./img/punct_b.svg);
     padding-left: 1.25em;
-    transform: translate(0,0);
+    transform: none;
 }
 .beam {
     list-style: none;
+    list-style-type: none;
     background: no-repeat url(./img/beam_b.svg);
     padding-left: 1.25em;
-    transform: translate(0,0);
+    transform: none;
 }
 .ray {
     list-style: none;
+    list-style-type: none;
     background: no-repeat url(./img/ray_b.svg);
     padding-left: 1.25em;
-    transform: translate(0,0);
+    transform: none;
 }
 .impact {
     list-style: none;
+    list-style-type: none;
     background: no-repeat url(./img/imp_b.svg);
     padding-left: 1.25em;
-    transform: translate(0,0);
+    transform: none;
 }
 .cost {
     list-style: none;
+    list-style-type: none;
     background: no-repeat url(./img/i_b.svg);
     padding-left: 1.25em;
 }
 .dur {
     list-style: none;
+    list-style-type: none;
     background: no-repeat url(./img/dur_b.svg);
     padding-left: 1.25em;
 }
