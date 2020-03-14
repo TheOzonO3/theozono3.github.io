@@ -89,7 +89,7 @@ ul {
     list-style: none;
     display: block; 
     list-style-type: none;
-    background-image: no-repeat url(./img/blast_b.svg);
+    background: no-repeat url(./img/blast_b.svg);
     padding-left: 1.25em;
     transform: none;
 }
