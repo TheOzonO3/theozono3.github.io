@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-
     <title>Герои тупа</title>
   </head>
 
@@ -62,8 +61,8 @@
           CostItem.textContent = `Стоимость: ${skills[j].cost}`;
           const DurItem = document.createElement('li');
           DurItem.textContent = `Длительность: ${skills[j].duration}`;
-          let damage = '';
           const DamageItem = document.createElement('ul');
+          DamageItem.textContent = `Уроны:`;
           if(skills[j].damage.ion.min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.textContent = `${skills[j].damage.ion.min}-${skills[j].damage.ion.max} - Ion`
@@ -94,7 +93,9 @@
             TypeDamage.textContent = `${skills[j].damage.sla.min}-${skills[j].damage.sla.max} - Sla`
             DamageItem.appendChild(TypeDamage)          
           }
-          lists[j].appendChild(DamageItem)
+          if(skills[j].damage.ion.min>0||skills[j].damage.blast.min>0||skills[j].damage.punct.min>0||skills[j].damage.impact.min>0||skills[j].damage.beam.min>0||skills[j].damage.sla.min>0){
+            lists[j].appendChild(DamageItem)
+          }
           if(typeof sdesc != 'undefined' && sdesc.length>0){
               lists[j].appendChild(DescItem);
           }
