@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Герои тупа</title>
+    <link rel="stylesheet" type="text/css" href="classes.css">
   </head>
 
   <body>
@@ -14,8 +15,61 @@
       <section>
 
       </section>
-
+      <span class="buttons">
+        <button onclick="classSelector('p')">Prev</button>
+        <button onclick="classSelector('n')">Next</button>
+      </span>
     <script>
+    const classes =[
+      'myList1',
+      'myList2',
+      'myList3',
+      'myList4',
+      'myList5'
+    ]
+    function classSelector(direction) {
+      const showed = document.getElementsByClassName(`show`)
+      let ish;
+      let classlist = [
+        showed[0].classList.contains(classes[0]),
+        showed[0].classList.contains(classes[1]),
+        showed[0].classList.contains(classes[2]),
+        showed[0].classList.contains(classes[3]),
+        showed[0].classList.contains(classes[4]),
+      ]
+      showed[0].classList.toggle(`show`)
+      switch (true) {
+        case classlist[0]:
+          ish = 0;
+          break;
+        case classlist[1]:
+          ish = 1;
+          break;
+        case classlist[2]:
+          ish = 2;
+          break;
+        case classlist[3]:
+          ish = 3;
+        break;
+        case classlist[4]:
+          ish = 4;
+          break;
+      }
+      if(direction == 'n'){
+        let ishs = ish+1
+        if(ishs>classes.length-1) {
+          ishs = 0
+        }
+        let doc = document.getElementsByClassName(classes[ishs])
+
+        doc[0].classList.toggle(`show`)
+      } else if(direction == 'p'){
+        let ishs = ish-1
+        if(ish-1<0) ishs = classes.length-1
+        let doc = document.getElementsByClassName(classes[ishs])
+        doc[0].classList.toggle(`show`)
+      }
+    }
     const header = document.querySelector('header');
     const section = document.querySelector('section');
 
@@ -35,7 +89,8 @@
       console.log(heros)
 
       for(let i = 0; i < heros.length; i++) {
-        const myArticle = document.createElement('article');
+        const ClassDiv = document.createElement('div')
+        ClassDiv.classList.add('classdiv')
         const myH2 = document.createElement('h2');
         const myList1 = document.createElement('ul');
         const myList2 = document.createElement('ul');
@@ -49,7 +104,10 @@
           myList4,
           myList5,
         ]
-
+        if(i == 0){
+          ClassDiv.classList.add(`show`)
+        }
+        ClassDiv.classList.add(classes[i])
         myH2.textContent = heros[i].name;
         const skills = heros[i].skill;
         for(let j = 0; j < skills.length; j++) {
@@ -97,7 +155,7 @@
             lists[j].appendChild(DamageItem)
           }
           if(typeof sdesc != 'undefined' && sdesc.length>0){
-              lists[j].appendChild(DescItem);
+            lists[j].appendChild(DescItem);
           }
           lists[j].appendChild(CostItem);
           if(skills[j].duration>0){
@@ -106,14 +164,13 @@
         }
 
 
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myList1);
-        myArticle.appendChild(myList2);
-        myArticle.appendChild(myList3);
-        myArticle.appendChild(myList4);
-        myArticle.appendChild(myList5);
+        ClassDiv.appendChild(myH2);
+        lists.forEach(addlists);
+        function addlists(item, index) {
+          ClassDiv.appendChild(lists[index])
+        }
 
-        section.appendChild(myArticle);
+        section.appendChild(ClassDiv);
       }
     }
 

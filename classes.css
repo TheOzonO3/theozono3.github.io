@@ -1,0 +1,35 @@
+body {
+    background-color: white;
+}
+h2 {
+    position: relative;
+    top: 0.5em;
+    left: 1em;
+    border: rgba(0, 171, 238, 1);
+    background-color:rgba(0, 171, 238, 0.1);
+    border-style: hidden hidden hidden solid;
+    padding-bottom: 5px;
+    width: calc(100% - 28px);
+}
+ul {
+    border: rgba(0, 171, 238, 1);
+    background-color:rgba(0, 171, 238, 0.1);
+    border-style: hidden hidden hidden solid;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+.classdiv {
+    display: none;
+    border: rgba(0, 171, 238, 1);;
+    border-style: hidden hidden hidden solid;
+    background-color:rgba(0, 171, 238, 0.05);
+    padding-bottom: 5px;
+}
+.show {
+    display: block;
+}
+.buttons{
+    position: relative;
+    left: 50%;
+    width: 100%; 
+}
