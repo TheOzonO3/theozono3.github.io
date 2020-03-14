@@ -2,8 +2,8 @@
     "class":[
         {
             "name": "Браво",
-            "skill":[
-                {
+            "skill":{
+                "light":{
                     "name": "Легкая атака",
                     "gif": "https://i.pinimg.com/originals/18/9b/32/189b32d7676bb073d6ee528029e3ec05.gif",
                     "type": 0,
@@ -35,7 +35,7 @@
                         }
                     }
                 },
-                {
+                "heavy":{
                     "name": "Тяжелая атака",
                     "gif": "https://steamuserimages-a.akamaihd.net/ugc/544129789080516714/A42D84AF72AE3CC89DA3BB1E6EEC88E5592ECE24/",
                     "type": 1,
@@ -67,7 +67,7 @@
                         }
                     }
                 },
-                {
+                "one":{
                     "name": "Граната",
                     "desc": "20 урона инициативе противника",
                     "gif": "https://66.media.tumblr.com/6e6cdcab7acfa9a5690c86881fa9ccc2/tumblr_n0xyf9VMLV1s4hm8fo1_400.gif",
@@ -101,7 +101,7 @@
                         }
                     }
                 },
-                {
+                "two":{
                     "name": "Заслон",
                     "desc": "**Каждое** критическое попадание будет восстанавливать Браво 10 <:shield_w:683428118056140933>",
                     "gif": "https://66.media.tumblr.com/tumblr_mbsh5w4am31rib6n8o1_500.gif",
@@ -135,7 +135,7 @@
                         }
                     }
                 },
-                {
+                "three":{
                     "name": "Рывок",
                     "desc": "Увеличивает максимальный запас <:shield_w:683428118056140933>  на 5 единиц и восстанавливает на следующем своем ходе 5 <:shield_w:683428118056140933>.",
                     "gif": "https://pa1.narvii.com/5848/0b6a0870101e107f0c8d021036d6080eae3786f3_hq.gif",
@@ -169,7 +169,7 @@
                         }
                     }
                 }
-            ],
+            },
             "stats":{
                 "Hp": "200",
                 "Ar": "0",
@@ -186,8 +186,8 @@
         },
         {
             "name": "Джагг",
-            "skill":[
-                {
+            "skill":{
+                "light":{
                     "name": "Легкая атака",
                     "gif": "https://media.giphy.com/media/KofCtfIQYePss/giphy.gif",
                     "type": 0,
@@ -219,7 +219,7 @@
                         }
                     }
                 },
-                {
+                "heavy":{
                     "name": "Тяжелая атака",
                     "gif": "https://66.media.tumblr.com/tumblr_m0spvqfBAd1r8i46lo1_500.gif",
                     "type": 1,
@@ -251,7 +251,7 @@
                         }
                     }
                 },
-                {
+                "one":{
                     "name": "Наночастицы",
                     "desc": "Добавляет броню: броня * количество текущих барьеров",
                     "gif": "http://img1.reactor.cc/pics/post/Mass-Effect-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-ME-gif-Paragon-Lost-1871983.gif",
@@ -285,7 +285,7 @@
                         }
                     }
                 },
-                {
+                "two":{
                     "name": "Ярость",
                     "desc": "Тратит 1 барьер на преобразование всего Ударного урона в урон Взрывом",
                     "gif": "https://media0.giphy.com/media/RnP4M4pvV4UKI/giphy.gif",
@@ -319,7 +319,7 @@
                         }
                     }
                 },
-                {
+                "three":{
                     "name": "Перегрузка",
                     "desc": "Весь заблокированный бронёй урон выплескивается на противника в виде <:exp_w:682771498381213750> . Если на момент окончания способности барьеров небыло, то полностью их восстанавливает.",
                     "gif": "https://media.giphy.com/media/F4jOF5eU6nPY4/giphy.gif",
@@ -353,7 +353,7 @@
                         }
                     }
                 }
-            ],
+            },
             "stats":{
                 "Hp": "150",
                 "Ar": "15",
@@ -370,8 +370,8 @@
         },
         {
             "name": "Хроника",
-            "skill":[
-                {
+            "skill":{
+                "light":{
                     "name": "Легкая атака",
                     "gif": "https://media.giphy.com/media/KofCtfIQYePss/giphy.gif",
                     "type": 0,
@@ -403,7 +403,7 @@
                         }
                     }
                 },
-                {
+                "heavy":{
                     "name": "Тяжелая атака",
                     "gif": "https://66.media.tumblr.com/tumblr_m0spvqfBAd1r8i46lo1_500.gif",
                     "type": 1,
@@ -435,7 +435,7 @@
                         }
                     }
                 },
-                {
+                "one":{
                     "name": "Стазис",
                     "desc": "Уменьшает скорость набора инициативы противника на 5 единиц, а так же точность на 20.",
                     "gif": "https://media.giphy.com/media/I5NPIrYiJjqBG/giphy.gif",
@@ -469,7 +469,7 @@
                         }
                     }
                 },
-                {
+                "two":{
                     "name": "Сингулярность",
                     "desc": "Увеличивает уклонение и шанс крита на 30 единиц.",
                     "gif": "https://i.pinimg.com/originals/08/5a/a5/085aa5c6781e62259e4c4a144d5ebb52.gif",
@@ -503,7 +503,7 @@
                         }
                     }
                 },
-                {
+                "three":{
                     "name": "Сверхновая",
                     "desc": "Усиление от Сингулярности и ослабления от Стазиса увеличивают урон Ионом по 15 каждый.",
                     "gif": "https://66.media.tumblr.com/35170b8d0c5a941760859bb6b388f3c2/tumblr_mzlju8QQeQ1s4hm8fo1_400.gif",
@@ -536,7 +536,7 @@
                         }
                     }
                 }
-            ],
+            },
             "stats":{
                 "Hp": "50",
                 "Ar": "0",
@@ -553,8 +553,8 @@
         },
         {
             "name": "Тень",
-            "skill":[
-                {
+            "skill":{
+                "light":{
                     "name": "Легкая атака",
                     "gif": "https://media.giphy.com/media/KofCtfIQYePss/giphy.gif",
                     "type": 0,
@@ -586,7 +586,7 @@
                         }
                     }
                 },
-                {
+                "heavy":{
                     "name": "Тяжелая атака",
                     "gif": "https://66.media.tumblr.com/tumblr_m0spvqfBAd1r8i46lo1_500.gif",
                     "type": 1,
@@ -618,7 +618,7 @@
                         }
                     }
                 },
-                {
+                "one":{
                     "name": "Невидимость",
                     "desc": "Дополнительно увеличивает уклонение на 25%",
                     "gif": "https://pa1.narvii.com/6767/9ee0bf598c89f6a794cb773c7f608bfea44b4c92_hq.gif",
@@ -652,7 +652,7 @@
                         }
                     }
                 },
-                {
+                "two":{
                     "name": "Прицел",
                     "desc": "Наносит урон Ионом равный параметру своей атаки. [Урон Ионом = Атака*Атаку]",
                     "gif": "https://media.giphy.com/media/LvkitYNocQZQk/giphy.gif",
@@ -685,7 +685,7 @@
                         }
                     }
                 },
-                {
+                "three":{
                     "name": "Связь",
                     "desc": "Увеличивает атаку в зависимости от уклонения противника и своего [Баф = (уклон + уклон врага) / 200 + 1]",
                     "gif": "https://thumbs.gfycat.com/QuickHatefulBats-size_restricted.gif",
@@ -719,7 +719,7 @@
                         }
                     }
                 }
-            ],
+            },
             "stats":{
                 "Hp": "50",
                 "Ar": "50",
@@ -736,8 +736,8 @@
         },
         {
             "name": "4kk",
-            "skill":[
-                {
+            "skill":{
+                "light":{
                     "name": "sla",
                     "type": 0,
                     "cost": 100,
@@ -768,7 +768,7 @@
                         }
                     }
                 },
-                {
+                "heavy":{
                     "name": "punct",
                     "type": 1,
                     "cost": 100,
@@ -799,7 +799,7 @@
                         }
                     }
                 },
-                {
+                "one":{
                     "name": "impact",
                     "desc": "",
                     "type": 2,
@@ -831,7 +831,7 @@
                         }
                     }
                 },
-                {
+                "two":{
                     "name": "beam",
                     "desc": "",
                     "type": 2,
@@ -863,7 +863,7 @@
                         }
                     }
                 },
-                {
+                "three":{
                     "name": "blast",
                     "desc": "",
                     "type": 2,
@@ -895,7 +895,7 @@
                         }
                     }
                 }
-            ],
+            },
             "stats":{
                 "Hp": "10000",
                 "Ar": "0",
