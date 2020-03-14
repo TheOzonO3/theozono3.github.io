@@ -35,6 +35,7 @@ header {
 }
 .skillname{
     list-style: none;
+    display: block; 
     list-style-type: none;
 }
 li {
@@ -72,11 +73,13 @@ ul {
 }
 .none {
     list-style: none;
+    display: block; 
     list-style-type: none;
     padding-left: 0em;
 }
 .ion {
     list-style: none;
+    display: block; 
     list-style-type: none;
     background: no-repeat url(./img/ion_b.svg);
     padding-left: 1.25em;
@@ -84,13 +87,15 @@ ul {
 }
 .blast {
     list-style: none;
+    display: block; 
     list-style-type: none;
-    background: no-repeat url(./img/blast_b.svg);
+    background-image: no-repeat url(./img/blast_b.svg);
     padding-left: 1.25em;
     transform: none;
 }
 .sla {
     list-style: none;
+    display: block; 
     list-style-type: none;
     background: no-repeat url(./img/slash_b.svg);
     padding-left: 1.25em;
@@ -98,6 +103,7 @@ ul {
 }
 .punct {
     list-style: none;
+    display: block; 
     list-style-type: none;
     background: no-repeat url(./img/punct_b.svg);
     padding-left: 1.25em;
@@ -105,6 +111,7 @@ ul {
 }
 .beam {
     list-style: none;
+    display: block; 
     list-style-type: none;
     background: no-repeat url(./img/beam_b.svg);
     padding-left: 1.25em;
@@ -112,6 +119,7 @@ ul {
 }
 .ray {
     list-style: none;
+    display: block; 
     list-style-type: none;
     background: no-repeat url(./img/ray_b.svg);
     padding-left: 1.25em;
@@ -119,6 +127,7 @@ ul {
 }
 .impact {
     list-style: none;
+    display: block; 
     list-style-type: none;
     background: no-repeat url(./img/imp_b.svg);
     padding-left: 1.25em;
@@ -126,12 +135,14 @@ ul {
 }
 .cost {
     list-style: none;
+    display: block; 
     list-style-type: none;
     background: no-repeat url(./img/i_b.svg);
     padding-left: 1.25em;
 }
 .dur {
     list-style: none;
+    display: block; 
     list-style-type: none;
     background: no-repeat url(./img/dur_b.svg);
     padding-left: 1.25em;
