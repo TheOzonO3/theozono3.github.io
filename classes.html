@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Our superheroes</title>
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+    <script>
+    const header = document.querySelector('header');
+    const section = document.querySelector('section');
+
+    let requestURL = 'https://raw.githubusercontent.com/TheOzonO3/theozono3.github.io/master/class.json';
+    let request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+
+    request.onload = function() {
+      const superHeroes = request.response;
+      showHeroes(superHeroes);
+    }
+
+    function showHeroes(jsonObj) {
+      const heros = jsonObj['class'];
+      console.log(heros)
+
+      for(let i = 0; i <= 4; i++) {
+        const myArticle = document.createElement('article');
+        const myH2 = document.createElement('h2');
+        const myList1 = document.createElement('ul');
+        const myList2 = document.createElement('ul');
+        const myList3 = document.createElement('ul');
+        const myList4 = document.createElement('ul');
+        const myList5 = document.createElement('ul');
+        const lists = [
+          myList1,
+          myList2,
+          myList3,
+          myList4,
+          myList5,
+        ]
+
+        myH2.textContent = heros[i].name;
+        const skills = heros[i].skill;
+        for(let j = 0; j <= 4; j++) {
+          let sdesc = skills[j].desc
+          lists[j].textContent = skills[j].name
+          const DescItem = document.createElement('li');
+          DescItem.textContent = `${skills[j].desc}`;
+          const CostItem = document.createElement('li');
+          CostItem.textContent = `Стоимость: ${skills[j].cost}`;
+          const DurItem = document.createElement('li');
+          DurItem.textContent = `Длительность: ${skills[j].duration}`;
+          let damage = '';
+          const DamageItem = document.createElement('ul');
+          if(skills[j].damage.ion.min>0){
+            const TypeDamage = document.createElement('li')
+            TypeDamage.textContent = `${skills[j].damage.ion.min}-${skills[j].damage.ion.max} - Ion`
+            DamageItem.appendChild(TypeDamage)
+          }
+          if(skills[j].damage.blast.min>0){
+            const TypeDamage = document.createElement('li')
+            TypeDamage.textContent = `${skills[j].damage.blast.min}-${skills[j].damage.blast.max} - Blast`
+            DamageItem.appendChild(TypeDamage)          
+          }
+          if(skills[j].damage.punct.min>0){
+            const TypeDamage = document.createElement('li')
+            TypeDamage.textContent = `${skills[j].damage.punct.min}-${skills[j].damage.punct.max} - Punct`
+            DamageItem.appendChild(TypeDamage)          
+          }
+          if(skills[j].damage.impact.min>0){
+            const TypeDamage = document.createElement('li')
+            TypeDamage.textContent = `${skills[j].damage.impact.min}-${skills[j].damage.impact.max} - Impact`
+            DamageItem.appendChild(TypeDamage)          
+          }
+          if(skills[j].damage.beam.min>0){
+            const TypeDamage = document.createElement('li')
+            TypeDamage.textContent = `${skills[j].damage.beam.min}-${skills[j].damage.beam.max} - Beam`
+            DamageItem.appendChild(TypeDamage)          
+          }
+          if(skills[j].damage.sla.min>0){
+            const TypeDamage = document.createElement('li')
+            TypeDamage.textContent = `${skills[j].damage.sla.min}-${skills[j].damage.sla.max} - Sla`
+            DamageItem.appendChild(TypeDamage)          
+          }
+          lists[j].appendChild(DamageItem)
+          if(typeof sdesc != 'undefined' && sdesc.length>0){
+              lists[j].appendChild(DescItem);
+          }
+          lists[j].appendChild(CostItem);
+          if(skills[j].duration>0){
+            lists[j].appendChild(DurItem);
+          }
+        }
+
+
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myList1);
+        myArticle.appendChild(myList2);
+        myArticle.appendChild(myList3);
+        myArticle.appendChild(myList4);
+        myArticle.appendChild(myList5);
+
+        section.appendChild(myArticle);
+      }
+    }
+
+    </script>
+  </body>
+</html>
