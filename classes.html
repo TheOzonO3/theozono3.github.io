@@ -34,7 +34,7 @@
       const heros = jsonObj['class'];
       console.log(heros)
 
-      for(let i = 0; i <= 4; i++) {
+      for(let i = 0; i < heros.length; i++) {
         const myArticle = document.createElement('article');
         const myH2 = document.createElement('h2');
         const myList1 = document.createElement('ul');
@@ -52,7 +52,7 @@
 
         myH2.textContent = heros[i].name;
         const skills = heros[i].skill;
-        for(let j = 0; j <= 4; j++) {
+        for(let j = 0; j < skills.length; j++) {
           let sdesc = skills[j].desc
           lists[j].textContent = skills[j].name
           const DescItem = document.createElement('li');
