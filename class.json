@@ -1,6 +1,6 @@
 {
-    "class":{
-        "one": {
+    "class":[
+        {
             "name": "Браво",
             "skill":{
                 "light":{
@@ -184,7 +184,7 @@
                 "Thick": "0.1"
             }
         },
-        "two": {
+        {
             "name": "Джагг",
             "skill":{
                 "light":{
@@ -368,7 +368,7 @@
                 "Thick": "0.5"
             }
         },
-        "three":{
+        {
             "name": "Хроника",
             "skill":{
                 "light":{
@@ -551,7 +551,7 @@
                 "Thick": "0.1"
             }
         },
-        "four":{
+        {
             "name": "Тень",
             "skill":{
                 "light":{
@@ -734,7 +734,7 @@
                 "Thick": "0.1"
             }
         },
-        "test": {
+        {
             "name": "4kk",
             "skill":{
                 "light":{
@@ -910,5 +910,5 @@
                 "Thick": "0.1"
             }
         }
-    }
+    ]
 }
