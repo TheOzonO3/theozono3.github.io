@@ -1,0 +1,914 @@
+{
+    "class":[
+        {
+            "name": "Браво",
+            "skill":{
+                "light":{
+                    "name": "Легкая атака",
+                    "gif": "https://i.pinimg.com/originals/18/9b/32/189b32d7676bb073d6ee528029e3ec05.gif",
+                    "type": 0,
+                    "cost": 50,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 7,
+                            "max": 10
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "heavy":{
+                    "name": "Тяжелая атака",
+                    "gif": "https://steamuserimages-a.akamaihd.net/ugc/544129789080516714/A42D84AF72AE3CC89DA3BB1E6EEC88E5592ECE24/",
+                    "type": 1,
+                    "cost": 100,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 5,
+                            "max": 35
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "one":{
+                    "name": "Граната",
+                    "desc": "20 урона инициативе противника",
+                    "gif": "https://66.media.tumblr.com/6e6cdcab7acfa9a5690c86881fa9ccc2/tumblr_n0xyf9VMLV1s4hm8fo1_400.gif",
+                    "type": 2,
+                    "cost": 75,
+                    "duration": 0,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 3,
+                            "max": 8
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 3,
+                            "max": 5
+                        }
+                    }
+                },
+                "two":{
+                    "name": "Заслон",
+                    "desc": "**Каждое** критическое попадание будет восстанавливать Браво 10 <:shield_w:683428118056140933>",
+                    "gif": "https://66.media.tumblr.com/tumblr_mbsh5w4am31rib6n8o1_500.gif",
+                    "type": 2,
+                    "cost": 100,
+                    "duration": 5,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "three":{
+                    "name": "Рывок",
+                    "desc": "Увеличивает максимальный запас <:shield_w:683428118056140933>  на 5 единиц и восстанавливает на следующем своем ходе 5 <:shield_w:683428118056140933>.",
+                    "gif": "https://pa1.narvii.com/5848/0b6a0870101e107f0c8d021036d6080eae3786f3_hq.gif",
+                    "type": 2,
+                    "cost": 50,
+                    "duration": 1,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 1,
+                            "max": 3
+                        }
+                    }
+                }
+            },
+            "stats":{
+                "Hp": "200",
+                "Ar": "0",
+                "Sh": "30",
+                "Bar": "1",
+                "In": "19",
+                "At": "5",
+                "Acc": "100",
+                "Dod": "30",
+                "Crit": "70",
+                "CritM": "2",
+                "Thick": "0.1"
+            }
+        },
+        {
+            "name": "Джагг",
+            "skill":{
+                "light":{
+                    "name": "Легкая атака",
+                    "gif": "https://media.giphy.com/media/KofCtfIQYePss/giphy.gif",
+                    "type": 0,
+                    "cost": 75,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 6,
+                            "max": 10
+                        },
+                        "impact": {
+                            "min": 6,
+                            "max": 10
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "heavy":{
+                    "name": "Тяжелая атака",
+                    "gif": "https://66.media.tumblr.com/tumblr_m0spvqfBAd1r8i46lo1_500.gif",
+                    "type": 1,
+                    "cost": 125,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 26,
+                            "max": 44
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "one":{
+                    "name": "Наночастицы",
+                    "desc": "Добавляет броню: броня * количество текущих барьеров",
+                    "gif": "http://img1.reactor.cc/pics/post/Mass-Effect-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-ME-gif-Paragon-Lost-1871983.gif",
+                    "type": 2,
+                    "cost": 75,
+                    "duration": 3,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "two":{
+                    "name": "Ярость",
+                    "desc": "Тратит 1 барьер на преобразование всего Ударного урона в урон Взрывом",
+                    "gif": "https://media0.giphy.com/media/RnP4M4pvV4UKI/giphy.gif",
+                    "type": 2,
+                    "cost": 75, 
+                    "duration": 5,             
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "three":{
+                    "name": "Перегрузка",
+                    "desc": "Весь заблокированный бронёй урон выплескивается на противника в виде <:exp_w:682771498381213750> . Если на момент окончания способности барьеров небыло, то полностью их восстанавливает.",
+                    "gif": "https://media.giphy.com/media/F4jOF5eU6nPY4/giphy.gif",
+                    "type": 2,
+                    "cost": 25,
+                    "duration": 2,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                }
+            },
+            "stats":{
+                "Hp": "150",
+                "Ar": "15",
+                "Sh": "0",
+                "Bar": "2",
+                "In": "14",
+                "At": "8",
+                "Acc": "110",
+                "Dod": "5",
+                "Crit": "10",
+                "CritM": "1.5",
+                "Thick": "0.5"
+            }
+        },
+        {
+            "name": "Хроника",
+            "skill":{
+                "light":{
+                    "name": "Легкая атака",
+                    "gif": "https://media.giphy.com/media/KofCtfIQYePss/giphy.gif",
+                    "type": 0,
+                    "cost": 50,
+                    "damage": {
+                        "sla": {
+                            "min": 4,
+                            "max": 20
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "heavy":{
+                    "name": "Тяжелая атака",
+                    "gif": "https://66.media.tumblr.com/tumblr_m0spvqfBAd1r8i46lo1_500.gif",
+                    "type": 1,
+                    "cost": 100,
+                    "damage": {
+                        "sla": {
+                            "min": 10,
+                            "max": 42
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "one":{
+                    "name": "Стазис",
+                    "desc": "Уменьшает скорость набора инициативы противника на 5 единиц, а так же точность на 20.",
+                    "gif": "https://media.giphy.com/media/I5NPIrYiJjqBG/giphy.gif",
+                    "type": 2,
+                    "cost": 50,
+                    "duration": 2,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "two":{
+                    "name": "Сингулярность",
+                    "desc": "Увеличивает уклонение и шанс крита на 30 единиц.",
+                    "gif": "https://i.pinimg.com/originals/08/5a/a5/085aa5c6781e62259e4c4a144d5ebb52.gif",
+                    "type": 2,
+                    "cost": 75,
+                    "duration": 3,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "three":{
+                    "name": "Сверхновая",
+                    "desc": "Усиление от Сингулярности и ослабления от Стазиса увеличивают урон Ионом по 15 каждый.",
+                    "gif": "https://66.media.tumblr.com/35170b8d0c5a941760859bb6b388f3c2/tumblr_mzlju8QQeQ1s4hm8fo1_400.gif",
+                    "type": 2,
+                    "cost": 100,              
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 20,
+                            "max": 20
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                }
+            },
+            "stats":{
+                "Hp": "50",
+                "Ar": "0",
+                "Sh": "20",
+                "Bar": "3",
+                "In": "20",
+                "At": "1",
+                "Acc": "60",
+                "Dod": "70",
+                "Crit": "20",
+                "CritM": "1.5",
+                "Thick": "0.1"
+            }
+        },
+        {
+            "name": "Тень",
+            "skill":{
+                "light":{
+                    "name": "Легкая атака",
+                    "gif": "https://media.giphy.com/media/KofCtfIQYePss/giphy.gif",
+                    "type": 0,
+                    "cost": 50,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 10,
+                            "max": 22
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "heavy":{
+                    "name": "Тяжелая атака",
+                    "gif": "https://66.media.tumblr.com/tumblr_m0spvqfBAd1r8i46lo1_500.gif",
+                    "type": 1,
+                    "cost": 100,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 20,
+                            "max": 44
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "one":{
+                    "name": "Невидимость",
+                    "desc": "Дополнительно увеличивает уклонение на 25%",
+                    "gif": "https://pa1.narvii.com/6767/9ee0bf598c89f6a794cb773c7f608bfea44b4c92_hq.gif",
+                    "type": 2,
+                    "cost": 50,
+                    "duration": 3,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "two":{
+                    "name": "Прицел",
+                    "desc": "Наносит урон Ионом равный параметру своей атаки. [Урон Ионом = Атака*Атаку]",
+                    "gif": "https://media.giphy.com/media/LvkitYNocQZQk/giphy.gif",
+                    "type": 2,
+                    "cost": 100,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "three":{
+                    "name": "Связь",
+                    "desc": "Увеличивает атаку в зависимости от уклонения противника и своего [Баф = (уклон + уклон врага) / 200 + 1]",
+                    "gif": "https://thumbs.gfycat.com/QuickHatefulBats-size_restricted.gif",
+                    "type": 2,
+                    "cost": 100, 
+                    "duration": 3,             
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                }
+            },
+            "stats":{
+                "Hp": "50",
+                "Ar": "50",
+                "Sh": "30",
+                "Bar": "0",
+                "In": "15",
+                "At": "1",
+                "Acc": "100",
+                "Dod": "50",
+                "Crit": "10",
+                "CritM": "1.5",
+                "Thick": "0.1"
+            }
+        },
+        {
+            "name": "4kk",
+            "skill":{
+                "light":{
+                    "name": "sla",
+                    "type": 0,
+                    "cost": 100,
+                    "damage": {
+                        "sla": {
+                            "min": 10,
+                            "max": 10
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "heavy":{
+                    "name": "punct",
+                    "type": 1,
+                    "cost": 100,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 10,
+                            "max": 10
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "one":{
+                    "name": "impact",
+                    "desc": "",
+                    "type": 2,
+                    "cost": 75,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 10,
+                            "max": 10
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "two":{
+                    "name": "beam",
+                    "desc": "",
+                    "type": 2,
+                    "cost": 100,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 10,
+                            "max": 10
+                        },
+                        "blast": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                },
+                "three":{
+                    "name": "blast",
+                    "desc": "",
+                    "type": 2,
+                    "cost": 50,
+                    "damage": {
+                        "sla": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "punct": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "impact": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "ion": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "beam": {
+                            "min": 0,
+                            "max": 0
+                        },
+                        "blast": {
+                            "min": 10,
+                            "max": 10
+                        }
+                    }
+                }
+            },
+            "stats":{
+                "Hp": "10000",
+                "Ar": "0",
+                "Sh": "500",
+                "Bar": "0",
+                "In": "20",
+                "At": "0",
+                "Acc": "100",
+                "Dod": "0",
+                "Crit": "100",
+                "CritM": "2",
+                "Thick": "0.1"
+            }
+        }
+    ]
+}
