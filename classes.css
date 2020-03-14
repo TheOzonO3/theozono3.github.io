@@ -65,48 +65,59 @@ ul {
     left: 50%;
     transform: translate(-50%, 0);
 }
+.none {
+    list-style: none;
+    padding-left: 0em;
+}
 .ion {
     list-style: none;
     background: no-repeat url(./img/ion_b.svg);
     padding-left: 1.25em;
+    transform: translate(0,0);
 }
 .blast {
     list-style: none;
     background: no-repeat url(./img/blast_b.svg);
     padding-left: 1.25em;
+    transform: translate(0,0);
 }
 .sla {
     list-style: none;
     background: no-repeat url(./img/slash_b.svg);
     padding-left: 1.25em;
+    transform: translate(0,0);
 }
 .punct {
     list-style: none;
     background: no-repeat url(./img/punct_b.svg);
     padding-left: 1.25em;
+    transform: translate(0,0);
 }
 .beam {
     list-style: none;
     background: no-repeat url(./img/beam_b.svg);
     padding-left: 1.25em;
+    transform: translate(0,0);
 }
 .ray {
     list-style: none;
     background: no-repeat url(./img/ray_b.svg);
     padding-left: 1.25em;
+    transform: translate(0,0);
 }
 .impact {
     list-style: none;
     background: no-repeat url(./img/imp_b.svg);
     padding-left: 1.25em;
+    transform: translate(0,0);
 }
-.in {
+.cost {
     list-style: none;
-    background: no-repeat url(./img/imp_b.svg);
+    background: no-repeat url(./img/i_b.svg);
     padding-left: 1.25em;
 }
 .dur {
     list-style: none;
-    background: no-repeat url(./img/imp_b.svg);
+    background: no-repeat url(./img/dur_b.svg);
     padding-left: 1.25em;
 }
