@@ -4,20 +4,23 @@
     <meta charset="utf-8">
     <title>Герои тупа</title>
     <link rel="stylesheet" type="text/css" href="classes.css">
+    <script src="https://kit.fontawesome.com/1f9cc497c9.js" crossorigin="anonymous"></script>    </head>
   </head>
 
   <body>
-
-      <header>
-
-      </header>
+    
+    <header>
+      <button class="btn"><i class="fa fa-home"></i> Главная </button>
+      <button class="btn"><i class="fa fa-bars"></i></button>
+      <button class="btn"><i class="fa fa-trash"></i></button>
+    </header>
 
       <section>
 
       </section>
       <span class="buttons">
-        <button onclick="classSelector('p')">Prev</button>
-        <button onclick="classSelector('n')">Next</button>
+        <button class="btn" onclick="classSelector('p')"><i class="fas fa-arrow-alt-circle-left"></i> Prev </button>
+        <button class="btn" onclick="classSelector('n')"> Next <i class="fas fa-arrow-alt-circle-right"></i></button>
       </span>
     <script>
     const classes =[
@@ -91,7 +94,8 @@
       for(let i = 0; i < heros.length; i++) {
         const ClassDiv = document.createElement('div')
         ClassDiv.classList.add('classdiv')
-        const myH2 = document.createElement('h2');
+        const myH2 = document.createElement('div');
+        myH2.classList.add(`name`)
         const myList1 = document.createElement('ul');
         const myList2 = document.createElement('ul');
         const myList3 = document.createElement('ul');
@@ -112,42 +116,51 @@
         const skills = heros[i].skill;
         for(let j = 0; j < skills.length; j++) {
           let sdesc = skills[j].desc
-          lists[j].textContent = skills[j].name
+          const NameItem = document.createElement('li');
+          NameItem.textContent = `${skills[j].name}`;
+          lists[j].appendChild(NameItem);
+          NameItem.classList.add('skillname')
           const DescItem = document.createElement('li');
           DescItem.textContent = `${skills[j].desc}`;
           const CostItem = document.createElement('li');
           CostItem.textContent = `Стоимость: ${skills[j].cost}`;
           const DurItem = document.createElement('li');
           DurItem.textContent = `Длительность: ${skills[j].duration}`;
-          const DamageItem = document.createElement('ul');
+          const DamageItem = document.createElement('li');
           DamageItem.textContent = `Уроны:`;
           if(skills[j].damage.ion.min>0){
             const TypeDamage = document.createElement('li')
+            TypeDamage.classList.add(`ion`)
             TypeDamage.textContent = `${skills[j].damage.ion.min}-${skills[j].damage.ion.max} - Ion`
             DamageItem.appendChild(TypeDamage)
           }
           if(skills[j].damage.blast.min>0){
             const TypeDamage = document.createElement('li')
+            TypeDamage.classList.add(`blast`)
             TypeDamage.textContent = `${skills[j].damage.blast.min}-${skills[j].damage.blast.max} - Blast`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage.punct.min>0){
             const TypeDamage = document.createElement('li')
+            TypeDamage.classList.add(`punct`)
             TypeDamage.textContent = `${skills[j].damage.punct.min}-${skills[j].damage.punct.max} - Punct`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage.impact.min>0){
             const TypeDamage = document.createElement('li')
+            TypeDamage.classList.add(`impact`)
             TypeDamage.textContent = `${skills[j].damage.impact.min}-${skills[j].damage.impact.max} - Impact`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage.beam.min>0){
             const TypeDamage = document.createElement('li')
+            TypeDamage.classList.add(`beam`)
             TypeDamage.textContent = `${skills[j].damage.beam.min}-${skills[j].damage.beam.max} - Beam`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage.sla.min>0){
             const TypeDamage = document.createElement('li')
+            TypeDamage.classList.add(`sla`)
             TypeDamage.textContent = `${skills[j].damage.sla.min}-${skills[j].damage.sla.max} - Sla`
             DamageItem.appendChild(TypeDamage)          
           }

@@ -1,15 +1,43 @@
+
 body {
-    background-color: white;
+    background-color: whitesmoke;
 }
-h2 {
+header {
+    background-color: rgb(58, 193, 247);
+    height: 2em;
+    text-align: center;
+    padding: 2em;
+    position: relative;
+    margin-bottom: 5px;
+}
+.btn {
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
+.name {
     position: relative;
     top: 0.5em;
-    left: 1em;
+    left: 0.65em;
     border: rgba(0, 171, 238, 1);
     background-color:rgba(0, 171, 238, 0.1);
     border-style: hidden hidden hidden solid;
     padding-bottom: 5px;
     width: calc(100% - 28px);
+}
+.skillname{
+    list-style: none;
+}
+li {
+    transform: translate(-1.25em, 0)
 }
 ul {
     border: rgba(0, 171, 238, 1);
@@ -29,7 +57,43 @@ ul {
     display: block;
 }
 .buttons{
-    position: relative;
+    margin-top: 5px;
+    position: absolute;
     left: 50%;
-    width: 100%; 
+    transform: translate(-50%, 0);
+}
+.ion {
+    list-style: none;
+    background: no-repeat url(./img/ion_b.svg);
+    padding-left: 24px;
+}
+.blast {
+    list-style: none;
+    background: no-repeat url(./img/blast_b.svg);
+    padding-left: 24px;
+}
+.sla {
+    list-style: none;
+    background: no-repeat url(./img/slash_b.svg);
+    padding-left: 24px;
+}
+.punct {
+    list-style: none;
+    background: no-repeat url(./img/punct_b.svg);
+    padding-left: 24px;
+}
+.beam {
+    list-style: none;
+    background: no-repeat url(./img/beam_b.svg);
+    padding-left: 24px;
+}
+.ray {
+    list-style: none;
+    background: no-repeat url(./img/ray_b.svg);
+    padding-left: 24px;
+}
+.impact {
+    list-style: none;
+    background: no-repeat url(./img/imp_b.svg);
+    padding-left: 24px;
 }
