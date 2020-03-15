@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Герои тупа</title>
-    <link rel="stylesheet" type="text/css" href="classes.css">
     <link rel="stylesheet" media="all and (orientation:portrait)" href="classes_p.css">
 	  <link rel="stylesheet" media="all and (orientation:landscape)" href="classes_l.css">
     <script src="https://kit.fontawesome.com/1f9cc497c9.js" crossorigin="anonymous"></script>    </head>
@@ -12,9 +11,10 @@
   <body>
     
     <header>
-      <button class="btn"><i class="fa fa-home"></i> Главная </button>
-      <button class="btn"><i class="fa fa-bars"></i></button>
-      <button class="btn"><i class="fa fa-trash"></i></button>
+      <button class="btn" onClick='location.href="./cindex.html"'><i class="fa fa-home"></i> Главная </button>
+      <button class="btn" onClick='location.href="./classes.html"'><i class="fas fa-user-circle"></i> Персонажи </button>
+      <button class="btn" onClick='location.href="./health.html"'><i class="fas fa-heart"></i> Здоровье </button>
+      <button class="btn" onClick='location.href="./stats.html"'><i class="fas fa-calendar-plus"></i> Характеристики </button>
     </header>
 
       <section>
@@ -136,31 +136,31 @@
           if(skills[j].damage.ion.min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`ion`)
-            TypeDamage.textContent = `   ${skills[j].damage.ion.min}-${skills[j].damage.ion.max}`
+            TypeDamage.textContent = `${skills[j].damage.ion.min}-${skills[j].damage.ion.max}`
             DamageItem.appendChild(TypeDamage)
           }
           if(skills[j].damage.blast.min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`blast`)
-            TypeDamage.textContent = `   ${skills[j].damage.blast.min}-${skills[j].damage.blast.max}`
+            TypeDamage.textContent = `${skills[j].damage.blast.min}-${skills[j].damage.blast.max}`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage.punct.min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`punct`)
-            TypeDamage.textContent = `   ${skills[j].damage.punct.min}-${skills[j].damage.punct.max}`
+            TypeDamage.textContent = `${skills[j].damage.punct.min}-${skills[j].damage.punct.max}`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage.impact.min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`impact`)
-            TypeDamage.textContent = `   ${skills[j].damage.impact.min}-${skills[j].damage.impact.max}`
+            TypeDamage.textContent = `${skills[j].damage.impact.min}-${skills[j].damage.impact.max}`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage.beam.min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`beam`)
-            TypeDamage.textContent = `   ${skills[j].damage.beam.min}-${skills[j].damage.beam.max}`
+            TypeDamage.textContent = `${skills[j].damage.beam.min}-${skills[j].damage.beam.max}`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage.sla.min>0){
