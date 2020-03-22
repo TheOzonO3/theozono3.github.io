@@ -1,0 +1,128 @@
+body {
+    background-color: whitesmoke;
+}
+.stats h1 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+}
+.stats h2 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+}
+.stats h3 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+}
+.stats h4 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+}
+.stats h5 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+}
+div .stats {
+    border: rgba(0, 171, 238, 1);
+    background-color:rgba(0, 171, 238, 0.1);
+    border-style: hidden hidden hidden solid;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.hp h1 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+}
+.hp h2 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+}
+.hp h3 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+}
+.hp h4 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+}
+.hp h5 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+}
+div .hp {
+    border: rgba(0, 171, 238, 1);
+    background-color:rgba(0, 171, 238, 0.1);
+    border-style: hidden hidden hidden solid;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+a {
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+header {
+    background-color: rgb(58, 193, 247);
+    height: 2em;
+    text-align: center;
+    padding: 2em;
+    position: relative;
+    margin-bottom: 5px;
+}
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+.btn:hover {
+    background-color: RoyalBlue;
+}
+.name {
+    position: relative;
+    top: 0.5em;
+    left: 0.65em;
+    border: rgba(0, 171, 238, 1);
+    background-color:rgba(0, 171, 238, 0.1);
+    border-style: hidden hidden hidden solid;
+    padding-bottom: 5px;
+    width: 98.505%;
+    padding-left: 5px;
+}
+ul {
+	border: rgba(0, 171, 238, 1);
+	background-color: rgba(0, 171, 238, 0.1);
+	border-style: hidden hidden hidden solid;
+	padding-bottom: 5px;
+	position: relative;
+	top: 0.5em;
+	left: 0.65em;
+	border-width: 0.2em;
+    padding-left: 25px;
+    padding-top: 5px;
+    width: 97%;
+}
+.classdiv {
+    display: none;
+    border: rgba(0, 171, 238, 1);;
+    border-style: hidden hidden hidden solid;
+    background-color:rgba(0, 171, 238, 0.05);
+    padding-bottom: 5px;
+    border-width: 0.2em;
+}
+.show {
+    display: block;
+}
+.buttons{
+    margin-top: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.none {
+    padding-left: 0em;
+}
