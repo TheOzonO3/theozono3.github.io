@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Действия, доступные в бою</title>
+        <link rel="stylesheet" href="classes.css">
+        <script src="https://kit.fontawesome.com/1f9cc497c9.js" crossorigin="anonymous"></script>    
+    </head>
+    <body>
+        <header>
+            <button class="btn" onClick='location.href="./cindex.html"'><i class="fa fa-home"></i> Главная </button>
+            <button class="btn" onClick='location.href="./classes.html"'><i class="fas fa-user-circle"></i> Персонажи </button>
+            <button class="btn" onClick='location.href="./health.html"'><i class="fas fa-heart"></i> Здоровье </button>
+            <button class="btn" onClick='location.href="./stats.html"'><i class="fas fa-calendar-plus"></i> Характеристики </button>
+            <button class="btn" onClick='location.href="./damages.html"'><i class="fas fa-calendar-plus"></i> Типы урона </button>
+            <button class="btn" onClick='location.href="./bars.html"'><i class="fas fa-calendar-plus"></i> Шкалы </button>
+            <button class="btn" onClick='location.href="./actions.html"'><i class="fas fa-calendar-plus"></i> Действия, доступные в бою </button>
+
+        </header>
+        <div class="act">
+            <h1><span class="cfont">D</span> Легкая атака</h1>
+            Наносит урон и накапливает Ярость. Потребляют в среднем 50 инициативы<br>
+            <h2><span class="cfont">C</span> Тяжелая атака</h2>
+            Наносит урон и накапливает Ярость и имет дополнительный множитель для шкалы Контузии. Потребляют в среднем 100 инициативы<br>
+            <h3><span class="cfont">1</span> <span class="cfont">2</span> <span class="cfont">3</span> Индивидуальные способности персонажа</h3>
+            Применяют различные эффекты, наносят урон и сбрасывают до нуля счетчик Ярости. Потребляют инициативу.<br>
+            <h4><span class="cfont">A</span> Защита</h4>
+            Уменьшает входимый урон в 2 раза. Сбрасывается при получении любого урона.<br>
+            <h5><span class="cfont">E</span> Пропуск хода</h5>
+            Потребляет 50 инициативы, а так же увеличивает точность на 25 единиц.<br>
+            <h6><span class="cfont">B</span> Побег</h6>
+            Дает возможность сбежать, шанс успеха зависит от соотношений ваших показателей ХП с показателями противника. При удачном побеге вы получаете мут на гораздо меньшее время. Попытка потребляет 100 инициативы<br>
+        </div>
+    </body>
+</html>

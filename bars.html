@@ -14,6 +14,8 @@
             <button class="btn" onClick='location.href="./stats.html"'><i class="fas fa-calendar-plus"></i> Характеристики </button>
             <button class="btn" onClick='location.href="./damages.html"'><i class="fas fa-calendar-plus"></i> Типы урона </button>
             <button class="btn" onClick='location.href="./bars.html"'><i class="fas fa-calendar-plus"></i> Шкалы </button>
+            <button class="btn" onClick='location.href="./actions.html"'><i class="fas fa-calendar-plus"></i> Действия, доступные в бою </button>
+
         </header>
         <div class="bars">
             <h1><span class="cfont">W</span> Шкала Инициативы</h1>
@@ -25,17 +27,22 @@
             a - показатель брони<br>
             t - показателей плотности<br>
             h + (1 + ((a / h) * (t / 10)))<br>
+            Заполняеться всеми типапи урона<br>
             При ее заполнении у персонажа снимаеться 100 инициативы и он пропускает ход<br>
             <h3><span class="cfont">H</span> Шкала Иона</h3>
             Шкалы Иона меняеться от максимальных показателей щитов и барьеров:<br>
             s - максимальный показатель щитов<br>
             b - максимальный показатель барьеров<br>
             s * (1 + (b / 10) ) + (30 * b)<br>
+            Заполняеться только Ионом<br>
+            При полном накоплении перегружает барьеры и щиты персонажа, отключая их на 2 хода.<br>
             <h4><span class="cfont">J</span> Шкала Луча</h4>
             Шкалы Иона меняеться от показателей брони и плотности:<br>
             a - показатель брони<br>
             t - показателей плотности<br>
             a * t * 2<br>
+            Заполняеться только Лучем<br>
+            При полном накоплении перегружает броню персонажа, отключая ее на 2 хода.<br>
             <h5><span class="cfont">F</span> Шкала Взрыва</h5>
             Максимум шкалы Взрыва всегда равен 100<br>
             <h6><span class="cfont">Y</span> Шкала Улитимативной способности</h6>

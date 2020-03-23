@@ -227,3 +227,48 @@ ul {
     margin-top: 16px;
     margin-bottom: 16px;
 }
+
+.act {
+    border: rgba(0, 171, 238, 1);
+    background-color:rgba(0, 171, 238, 0.1);
+    border-style: hidden hidden hidden solid;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.act h1 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.act h2 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.act h3 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.act h4 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.act h5 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.act h6 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
