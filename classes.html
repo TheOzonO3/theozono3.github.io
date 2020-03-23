@@ -182,7 +182,9 @@
           lists[j].appendChild(NameItem);
           NameItem.classList.add('skillname')
           const DescItem = document.createElement('li');
-          DescItem.textContent = `${skills[j].desc}`;
+          if(skills[j].desc){
+            DescItem.innerHTML = `${skills[j].desc.replace(/[\n]/g, "<br>")}`;
+          }
           const CostItem = document.createElement('li');
           CostItem.innerHTML = `<span title="Портребление инициативы" class='cfont'>V</span> ${skills[j].cost}`;
           CostItem.classList.add('cost')
