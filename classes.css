@@ -61,6 +61,10 @@ a {
     color: red;
     text-decoration: none;
 }
+.cfont a {
+    color: blueviolet;
+    text-decoration: none;
+}
 a:hover{
     text-decoration: underline;
 }
