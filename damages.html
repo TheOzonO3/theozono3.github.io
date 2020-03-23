@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Характеристики</title>
+        <title>Типы урона</title>
         <link rel="stylesheet" href="classes.css">
         <script src="https://kit.fontawesome.com/1f9cc497c9.js" crossorigin="anonymous"></script>    
     </head>
@@ -13,6 +13,7 @@
             <button class="btn" onClick='location.href="./health.html"'><i class="fas fa-heart"></i> Здоровье </button>
             <button class="btn" onClick='location.href="./stats.html"'><i class="fas fa-calendar-plus"></i> Характеристики </button>
             <button class="btn" onClick='location.href="./damages.html"'><i class="fas fa-calendar-plus"></i> Типы урона </button>
+            <button class="btn" onClick='location.href="./bars.html"'><i class="fas fa-calendar-plus"></i> Шкалы </button>
         </header>
         <div class="damages">
             <h1><span class="cfont">K</span> Разрез</h1>
@@ -31,13 +32,13 @@
             Слаб против <a href="./health.html">Барьеров:</a><br>
             Если в ударе который снял все барьеры присутсвует удар - барьер востановиться в 2 раза быстрее<br>
             <h4><span class="cfont">H</span > Ион</h4>
-            При полном накоплении шкалы Иона перегружает барьеры и щиты персонажа, отключая их на 2 хода.<br>
+            При полном накоплении <a href="./bars.html">шкалы Иона</a> перегружает барьеры и щиты персонажа, отключая их на 2 хода.<br>
             По истечению 2-х ходов барьеры и щиты востановляються к тому значению которое у них было до полного заполнения шкалы.<br>
             <h5><span class="cfont">J</span> Луч</h5>
-            При полном накоплении шкалы Луча перегружает броню вместе с плотностью персонажа, отключая их на 2 хода.<br>
+            При полном накоплении <a href="./bars.html">шкалы Луча</a> перегружает броню вместе с плотностью персонажа, отключая их на 2 хода.<br>
             Когда броня отключена к всему урону добавляеться чистый урон - количество урона который она должна была заблокировать
             <h6><span class="cfont">F</span> Взрыв</h6>
-            При накоплении шкалы Взрыва наноситься урон Взрывом равный: последнему урону Взрыва который заполнил шкалу умноженому на количество ходов которые понадобились для заполнения шкалы
+            При накоплении <a href="./bars.html">шкалы Взрыва</a> наноситься урон Взрывом равный: последнему урону Взрыва который заполнил шкалу умноженому на количество ходов которые понадобились для заполнения шкалы
         </div>
     </body>
 </html>

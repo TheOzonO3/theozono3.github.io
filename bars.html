@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Шкалы</title>
+        <link rel="stylesheet" href="classes.css">
+        <script src="https://kit.fontawesome.com/1f9cc497c9.js" crossorigin="anonymous"></script>    
+    </head>
+    <body>
+        <header>
+            <button class="btn" onClick='location.href="./cindex.html"'><i class="fa fa-home"></i> Главная </button>
+            <button class="btn" onClick='location.href="./classes.html"'><i class="fas fa-user-circle"></i> Персонажи </button>
+            <button class="btn" onClick='location.href="./health.html"'><i class="fas fa-heart"></i> Здоровье </button>
+            <button class="btn" onClick='location.href="./stats.html"'><i class="fas fa-calendar-plus"></i> Характеристики </button>
+            <button class="btn" onClick='location.href="./damages.html"'><i class="fas fa-calendar-plus"></i> Типы урона </button>
+            <button class="btn" onClick='location.href="./bars.html"'><i class="fas fa-calendar-plus"></i> Шкалы </button>
+        </header>
+        <div class="bars">
+            <h1><span class="cfont">W</span> Шкала Инициативы</h1>
+            Максимум шкалы Инициативы всегда равен 100<br>
+            При накоплении шкалы игрока начинаеться его ход<br>
+            <h2><span class="cfont">L</span> Шкала Контузии</h2>
+            Шкалы Контузии меняеться от показателей максимального здоровья, брони и плотности:<br>
+            h - максимальный показатель здоровья<br>
+            a - показатель брони<br>
+            t - показателей плотности<br>
+            h + (1 + ((a / h) * (t / 10)))<br>
+            При ее заполнении у персонажа снимаеться 100 инициативы и он пропускает ход<br>
+            <h3><span class="cfont">H</span> Шкала Иона</h3>
+            Шкалы Иона меняеться от максимальных показателей щитов и барьеров:<br>
+            s - максимальный показатель щитов<br>
+            b - максимальный показатель барьеров<br>
+            s * (1 + (b / 10) ) + (30 * b)<br>
+            <h4><span class="cfont">J</span> Шкала Луча</h4>
+            Шкалы Иона меняеться от показателей брони и плотности:<br>
+            a - показатель брони<br>
+            t - показателей плотности<br>
+            a * t * 2<br>
+            <h5><span class="cfont">F</span> Шкала Взрыва</h5>
+            Максимум шкалы Взрыва всегда равен 100<br>
+            <h6><span class="cfont">Y</span> Шкала Улитимативной способности</h6>
+            А о ней ничего неизвестно
+        </div>
+    </body>
+</html>
