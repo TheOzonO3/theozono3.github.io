@@ -137,31 +137,31 @@
         ClassDiv.classList.add(classes[i])
         let desc = ''
         if(heros[i].stats.Hp>0){
-          desc = desc+`<span class='cfont'><a href="./health.html">O</a></span> ${heros[i].stats.Hp}<br>`
+          desc = desc+`<span title="Здоровье" class='cfont'><a href="./health.html">O</a></span> ${heros[i].stats.Hp}<br>`
         }
         if(heros[i].stats.Ar>0){
-          desc = desc+`<span class='cfont'><a href="./health.html">M</a></span>  ${heros[i].stats.Ar} <span class='cfont'>S</span> ${heros[i].stats.Thick}<br>`
+          desc = desc+`<span title="Броня" class='cfont'><a href="./health.html">M</a></span>  ${heros[i].stats.Ar} <span title="Плотность" class='cfont'>S</span> ${heros[i].stats.Thick}<br>`
         }
         if(heros[i].stats.Sh>0){
-          desc = desc+`<span class='cfont'><a href="./health.html">P</a></span>  ${heros[i].stats.Sh}<br>`
+          desc = desc+`<span title="Щиты" class='cfont'><a href="./health.html">P</a></span>  ${heros[i].stats.Sh}<br>`
         }
         if(heros[i].stats.Bar>0){
-          desc = desc+`<span class='cfont'><a href="./health.html">N</a></span>  ${heros[i].stats.Bar}<br>`
+          desc = desc+`<span title="Барьеры" class='cfont'><a href="./health.html">N</a></span>  ${heros[i].stats.Bar}<br>`
         }
         if(heros[i].stats.At>0){
-          desc = desc+`<span class='cfont'><a href="./stats.html">R</a></span>  ${heros[i].stats.At}<br>`
+          desc = desc+`<span title="Аттака" class='cfont'><a href="./stats.html">R</a></span>  ${heros[i].stats.At}<br>`
         }
         if(heros[i].stats.Acc>0){
-          desc = desc+`<span class='cfont'><a href="./stats.html">Q</a></span>  ${heros[i].stats.Acc}<br>`
+          desc = desc+`<span title="Точность" class='cfont'><a href="./stats.html">Q</a></span>  ${heros[i].stats.Acc}<br>`
         }
         if(heros[i].stats.Dod>0){
-          desc = desc+`<span class='cfont'><a href="./stats.html">T</a></span>  ${heros[i].stats.Dod}<br>`
+          desc = desc+`<span title="Уклонение" class='cfont'><a href="./stats.html">T</a></span>  ${heros[i].stats.Dod}<br>`
         }
         if(heros[i].stats.Crit>0){
-          desc = desc+`<span class='cfont'><a href="./stats.html">X</a></span>  ${heros[i].stats.Crit} (x${heros[i].stats.CritM})<br>`
+          desc = desc+`<span title="Шанс критической атаки" class='cfont'><a href="./stats.html">X</a></span>  ${heros[i].stats.Crit} (x${heros[i].stats.CritM})<br>`
         }
         if(heros[i].stats.In>0){
-          desc = desc+`<span class='cfont'><a href="./stats.html">W</a></span>  ${heros[i].stats.In}<br>`
+          desc = desc+`<span title="Инициатива" class='cfont'><a href="./stats.html">W</a></span>  ${heros[i].stats.In}<br>`
         }
         myH2.innerHTML = `<span class='cfont'>${i+1}</span> ${heros[i].name}<br>${desc}`;
         const skills = heros[i].skill;
@@ -169,63 +169,63 @@
           let sdesc = skills[j].desc
           const NameItem = document.createElement('li');
           if(j == 0){
-            NameItem.innerHTML = `<span class='cfont'>D</span> ${skills[j].name}`;
+            NameItem.innerHTML = `<span title="Легкая атака" class='cfont'>D</span> ${skills[j].name}`;
           } else if(j == 1){
-            NameItem.innerHTML = `<span class='cfont'>C</span> ${skills[j].name}`;
+            NameItem.innerHTML = `<span title="Тяжелая атака" class='cfont'>C</span> ${skills[j].name}`;
           } else if(j == 2){
-            NameItem.innerHTML = `<span class='cfont'>1</span> ${skills[j].name}`;
+            NameItem.innerHTML = `<span title="Первая способность" class='cfont'>1</span> ${skills[j].name}`;
           } else if(j == 3){
-            NameItem.innerHTML = `<span class='cfont'>2</span> ${skills[j].name}`;
+            NameItem.innerHTML = `<span title="Вторая способность" class='cfont'>2</span> ${skills[j].name}`;
           } else if(j == 4){
-            NameItem.innerHTML = `<span class='cfont'>3</span> ${skills[j].name}`;
+            NameItem.innerHTML = `<span title="Третья способность" class='cfont'>3</span> ${skills[j].name}`;
           }
           lists[j].appendChild(NameItem);
           NameItem.classList.add('skillname')
           const DescItem = document.createElement('li');
           DescItem.textContent = `${skills[j].desc}`;
           const CostItem = document.createElement('li');
-          CostItem.innerHTML = `<span class='cfont'>V</span> ${skills[j].cost}`;
+          CostItem.innerHTML = `<span title="Портребление инициативы" class='cfont'>V</span> ${skills[j].cost}`;
           CostItem.classList.add('cost')
           const DurItem = document.createElement('li');
-          DurItem.innerHTML = `<span class='cfont'>U</span> ${skills[j].duration}`;
+          DurItem.innerHTML = `<span title="Длительность" class='cfont'>U</span> ${skills[j].duration}`;
           DurItem.classList.add('dur')
           const DamageItem = document.createElement('li');
           DamageItem.textContent = `Уроны:`;
           DamageItem.classList.add('none')
-          if(skills[j].damage[3].min>0){
+          if(skills[j].damage[0].min>0){
             const TypeDamage = document.createElement('li')
-            TypeDamage.classList.add(`ion`)
-            TypeDamage.innerHTML = `<span class='cfont'>H</span> ${skills[j].damage[3].min}-${skills[j].damage[3].max}`
-            DamageItem.appendChild(TypeDamage)
-          }
-          if(skills[j].damage[5].min>0){
-            const TypeDamage = document.createElement('li')
-            TypeDamage.classList.add(`blast`)
-            TypeDamage.innerHTML = `<span class='cfont'>F</span> ${skills[j].damage[5].min}-${skills[j].damage[5].max}`
+            TypeDamage.classList.add(`sla`)
+            TypeDamage.innerHTML = `<span title="Разрез" class='cfont'>K</span> ${skills[j].damage[0].min}-${skills[j].damage[0].max}`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage[1].min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`punct`)
-            TypeDamage.innerHTML = `<span class='cfont'>I</span> ${skills[j].damage[1].min}-${skills[j].damage[1].max}`
+            TypeDamage.innerHTML = `<span title="Пронзание" class='cfont'>I</span> ${skills[j].damage[1].min}-${skills[j].damage[1].max}`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage[2].min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`impact`)
-            TypeDamage.innerHTML = `<span class='cfont'>G</span> ${skills[j].damage[2].min}-${skills[j].damage[2].max}`
+            TypeDamage.innerHTML = `<span title="Удар" class='cfont'>G</span> ${skills[j].damage[2].min}-${skills[j].damage[2].max}`
             DamageItem.appendChild(TypeDamage)          
+          }
+          if(skills[j].damage[3].min>0){
+            const TypeDamage = document.createElement('li')
+            TypeDamage.classList.add(`ion`)
+            TypeDamage.innerHTML = `<span title="Ион" class='cfont'>H</span> ${skills[j].damage[3].min}-${skills[j].damage[3].max}`
+            DamageItem.appendChild(TypeDamage)
           }
           if(skills[j].damage[4].min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`beam`)
-            TypeDamage.innerHTML = `<span class='cfont'>J</span> ${skills[j].damage[4].min}-${skills[j].damage[4].max}`
+            TypeDamage.innerHTML = `<span title="Луч" class='cfont'>J</span> ${skills[j].damage[4].min}-${skills[j].damage[4].max}`
             DamageItem.appendChild(TypeDamage)          
           }
-          if(skills[j].damage[0].min>0){
+          if(skills[j].damage[5].min>0){
             const TypeDamage = document.createElement('li')
-            TypeDamage.classList.add(`sla`)
-            TypeDamage.innerHTML = `<span class='cfont'>K</span> ${skills[j].damage[0].min}-${skills[j].damage[0].max}`
+            TypeDamage.classList.add(`blast`)
+            TypeDamage.innerHTML = `<span title="Взрыв" class='cfont'>F</span> ${skills[j].damage[5].min}-${skills[j].damage[5].max}`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage[3].min>0||skills[j].damage[5].min>0||skills[j].damage[1].min>0||skills[j].damage[2].min>0||skills[j].damage[4].min>0||skills[j].damage[0].min>0){
