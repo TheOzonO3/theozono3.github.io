@@ -14,6 +14,7 @@
       <button class="btn" onClick='location.href="./classes.html"'><i class="fas fa-user-circle"></i> Персонажи </button>
       <button class="btn" onClick='location.href="./health.html"'><i class="fas fa-heart"></i> Здоровье </button>
       <button class="btn" onClick='location.href="./stats.html"'><i class="fas fa-calendar-plus"></i> Характеристики </button>
+      <button class="btn" onClick='location.href="./damages.html"'><i class="fas fa-calendar-plus"></i> Типы урона </button>
     </header>
 
       <section>
@@ -197,37 +198,37 @@
           if(skills[j].damage[0].min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`sla`)
-            TypeDamage.innerHTML = `<span title="Разрез" class='cfont'>K</span> ${skills[j].damage[0].min}-${skills[j].damage[0].max}`
+            TypeDamage.innerHTML = `<span title="Разрез" class='cfont'><a href="./damages.html">K</a></span> ${skills[j].damage[0].min}-${skills[j].damage[0].max}`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage[1].min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`punct`)
-            TypeDamage.innerHTML = `<span title="Пронзание" class='cfont'>I</span> ${skills[j].damage[1].min}-${skills[j].damage[1].max}`
+            TypeDamage.innerHTML = `<span title="Пронзание" class='cfont'><a href="./damages.html">I</a></span> ${skills[j].damage[1].min}-${skills[j].damage[1].max}`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage[2].min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`impact`)
-            TypeDamage.innerHTML = `<span title="Удар" class='cfont'>G</span> ${skills[j].damage[2].min}-${skills[j].damage[2].max}`
+            TypeDamage.innerHTML = `<span title="Удар" class='cfont'><a href="./damages.html">G</a></span> ${skills[j].damage[2].min}-${skills[j].damage[2].max}`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage[3].min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`ion`)
-            TypeDamage.innerHTML = `<span title="Ион" class='cfont'>H</span> ${skills[j].damage[3].min}-${skills[j].damage[3].max}`
+            TypeDamage.innerHTML = `<span title="Ион" class='cfont'><a href="./damages.html">H</a></span> ${skills[j].damage[3].min}-${skills[j].damage[3].max}`
             DamageItem.appendChild(TypeDamage)
           }
           if(skills[j].damage[4].min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`beam`)
-            TypeDamage.innerHTML = `<span title="Луч" class='cfont'>J</span> ${skills[j].damage[4].min}-${skills[j].damage[4].max}`
+            TypeDamage.innerHTML = `<span title="Луч" class='cfont'><a href="./damages.html">J</a></span> ${skills[j].damage[4].min}-${skills[j].damage[4].max}`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage[5].min>0){
             const TypeDamage = document.createElement('li')
             TypeDamage.classList.add(`blast`)
-            TypeDamage.innerHTML = `<span title="Взрыв" class='cfont'>F</span> ${skills[j].damage[5].min}-${skills[j].damage[5].max}`
+            TypeDamage.innerHTML = `<span title="Взрыв" class='cfont'><a href="./damages.html">F</a></span> ${skills[j].damage[5].min}-${skills[j].damage[5].max}`
             DamageItem.appendChild(TypeDamage)          
           }
           if(skills[j].damage[3].min>0||skills[j].damage[5].min>0||skills[j].damage[1].min>0||skills[j].damage[2].min>0||skills[j].damage[4].min>0||skills[j].damage[0].min>0){

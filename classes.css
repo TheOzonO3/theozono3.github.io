@@ -137,3 +137,48 @@ ul {
     font-size: 24px;
     font-family: Leib
 }
+
+.damages {
+    border: rgba(0, 171, 238, 1);
+    background-color:rgba(0, 171, 238, 0.1);
+    border-style: hidden hidden hidden solid;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.damages h1 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.damages h2 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.damages h3 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.damages h4 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.damages h5 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.damages h6 {
+    color: rebeccapurple;
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
