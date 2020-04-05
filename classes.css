@@ -40,7 +40,7 @@ ul {
     background-color: var(--primary);
     border-style: hidden hidden solid solid;
     padding-bottom: 5px;
-    border-radius: 10px 100px 100px 10px;
+    border-radius: 1em 10em 10em 1em;
     padding-top: 10px;
     padding-right: 10px;
     margin-left: 0px;
