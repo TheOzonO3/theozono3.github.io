@@ -122,7 +122,7 @@
       for(let i = 0; i < heros.length; i++) {
         const ClassDiv = document.createElement('div')
         ClassDiv.classList.add('classdiv')
-        const myH2 = document.createElement('div');
+        const myH2 = document.createElement('ul');
         myH2.classList.add(`name`)
         const myList1 = document.createElement('ul');
         const myList2 = document.createElement('ul');
@@ -140,35 +140,47 @@
           ClassDiv.classList.add(`show`)
         }
         ClassDiv.classList.add(classes[i])
-        let desc = ''
+        let HpCon = ''
+        let StatsCon = ''
+        const Table = document.createElement('table');
+        const TableItem = document.createElement('tr');
+        const HpItem = document.createElement('td');
+        const StatsItem = document.createElement('td');
+        // HP
         if(heros[i].stats.Hp>0){
-          desc = desc+`<span title="Здоровье" class='cfont'><a href="./health.html">O</a></span> ${heros[i].stats.Hp}<br>`
+          HpCon = HpCon+`<span title="Здоровье" class='cfont'><a href="./health.html">O</a></span> ${heros[i].stats.Hp}<br>`
         }
         if(heros[i].stats.Ar>0){
-          desc = desc+`<span title="Броня" class='cfont'><a href="./health.html">M</a></span>  ${heros[i].stats.Ar} <span title="Плотность" class='cfont'>S</span> ${heros[i].stats.Thick}<br>`
+          HpCon = HpCon+`<span title="Броня" class='cfont'><a href="./health.html">M</a></span>  ${heros[i].stats.Ar} <span title="Плотность" class='cfont'><a href="./health.html">S</a></span> ${heros[i].stats.Thick}<br>`
         }
         if(heros[i].stats.Sh>0){
-          desc = desc+`<span title="Щиты" class='cfont'><a href="./health.html">P</a></span>  ${heros[i].stats.Sh}<br>`
+          HpCon = HpCon+`<span title="Щиты" class='cfont'><a href="./health.html">P</a></span>  ${heros[i].stats.Sh}<br>`
         }
         if(heros[i].stats.Bar>0){
-          desc = desc+`<span title="Барьеры" class='cfont'><a href="./health.html">N</a></span>  ${heros[i].stats.Bar}<br>`
+          HpCon = HpCon+`<span title="Барьеры" class='cfont'><a href="./health.html">N</a></span>  ${heros[i].stats.Bar}<br>`
         }
+
+        // STATS
         if(heros[i].stats.At>0){
-          desc = desc+`<span title="Аттака" class='cfont'><a href="./stats.html">R</a></span>  ${heros[i].stats.At}<br>`
+          StatsCon = StatsCon+`<span title="Аттака" class='cfont'><a href="./stats.html">R</a></span>  ${heros[i].stats.At}<br>`
         }
-        if(heros[i].stats.Acc>0){
-          desc = desc+`<span title="Точность" class='cfont'><a href="./stats.html">Q</a></span>  ${heros[i].stats.Acc}<br>`
-        }
-        if(heros[i].stats.Dod>0){
-          desc = desc+`<span title="Уклонение" class='cfont'><a href="./stats.html">T</a></span>  ${heros[i].stats.Dod}<br>`
+        if(heros[i].stats.Acc>=0){
+          StatsCon = StatsCon+`<span title="Точность" class='cfont'><a href="./stats.html">Q</a></span>  ${heros[i].stats.Acc} <span title="Уклонение" class='cfont'><a href="./stats.html">T</a></span>  ${heros[i].stats.Dod}<br>`
         }
         if(heros[i].stats.Crit>0){
-          desc = desc+`<span title="Шанс критической атаки" class='cfont'><a href="./stats.html">X</a></span>  ${heros[i].stats.Crit} (x${heros[i].stats.CritM})<br>`
+          StatsCon = StatsCon+`<span title="Шанс критической атаки" class='cfont'><a href="./stats.html">X</a></span>  ${heros[i].stats.Crit} (x${heros[i].stats.CritM})<br>`
         }
         if(heros[i].stats.In>0){
-          desc = desc+`<span title="Инициатива" class='cfont'><a href="./stats.html">W</a></span>  ${heros[i].stats.In}<br>`
+          StatsCon = StatsCon+`<span title="Инициатива" class='cfont'><a href="./stats.html">W</a></span>  ${heros[i].stats.In}<br>`
         }
-        myH2.innerHTML = `<span class='cfont'>${i+1}</span> ${heros[i].name}<br>${desc}`;
+
+        HpItem.innerHTML = HpCon
+        StatsItem.innerHTML = StatsCon
+        myH2.innerHTML = `<span class='cfont'>${i+1}</span> ${heros[i].name}<br>`;
+        Table.appendChild(TableItem);
+        TableItem.appendChild(HpItem);
+        TableItem.appendChild(StatsItem);
+        myH2.appendChild(Table)
         const skills = heros[i].skill;
         for(let j = 0; j < skills.length; j++) {
           let sdesc = skills[j].desc

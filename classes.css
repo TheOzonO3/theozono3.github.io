@@ -1,124 +1,55 @@
 @font-face { font-family: Leib; src: url('fonts/Leib_Duels.ttf'); } 
 
-body {
-    background-color: whitesmoke;
+:root{
+    --background: #263238;
+    --primary: #ee9c00;
+    --light: #ffcd47;
+    --dark: #b66e00;
+    --links: whitesmoke;
 }
-.stats h1 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-}
-.stats h2 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-}
-.stats h3 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-}
-.stats h4 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-}
-.stats h5 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-}
-div .stats {
-    border: rgba(0, 171, 238, 1);
-    background-color:rgba(0, 171, 238, 0.1);
-    border-style: hidden hidden hidden solid;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
-.hp h1 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-}
-.hp h2 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-}
-.hp h3 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-}
-.hp h4 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-}
-.hp h5 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-}
-div .hp {
-    border: rgba(0, 171, 238, 1);
-    background-color:rgba(0, 171, 238, 0.1);
-    border-style: hidden hidden hidden solid;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
+
 a {
-    color: red;
+    color: var(--links);
     text-decoration: none;
-}
-.cfont a {
-    color: blueviolet;
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: underline;
 }
 header {
-    background-color: rgb(58, 193, 247);
-    height: 2em;
     text-align: center;
     padding: 2em;
-    position: relative;
-    margin-bottom: 5px;
 }
 .btn {
-    background-color: DodgerBlue;
+    background-color: var(--primary);
     border: none;
-    color: white;
+    color: var(--links);
     padding: 12px 16px;
     font-size: 16px; 
     cursor: pointer; 
 }
 
 .btn:hover {
-    background-color: RoyalBlue;
+    background-color: var(--dark);
 }
-.name {
-    position: relative;
-    top: 0.5em;
-    left: 0.65em;
-    border: rgba(0, 171, 238, 1);
-    background-color:rgba(0, 171, 238, 0.1);
-    border-style: hidden hidden hidden solid;
-    padding-bottom: 5px;
-    width: 98.505%;
-    padding-left: 5px;
+li {
+    list-style-type: none;
+}
+body {
+    background-color: var(--background); 
+    
 }
 ul {
-	border: rgba(0, 171, 238, 1);
-	background-color: rgba(0, 171, 238, 0.1);
-	border-style: hidden hidden hidden solid;
-	padding-bottom: 5px;
-	position: relative;
-	top: 0.5em;
-	left: 0.65em;
-	border-width: 0.2em;
-    padding-left: 25px;
-    padding-top: 5px;
-    width: 97%;
+    border: var(--dark);
+    background-color: var(--primary);
+    border-style: hidden hidden solid solid;
+    padding-bottom: 5px;
+    border-radius: 10px 100px 100px 10px;
+    padding-top: 10px;
+    margin-left: 0px;
+    padding-left: 10px;
+}
+tr {
+    vertical-align: top;
 }
 .classdiv {
     display: none;
-    border: rgba(0, 171, 238, 1);;
-    border-style: hidden hidden hidden solid;
-    background-color:rgba(0, 171, 238, 0.05);
-    padding-bottom: 5px;
-    border-width: 0.2em;
 }
 .show {
     display: block;
@@ -138,136 +69,8 @@ ul {
     font-family: Leib
 }
 
-.damages {
-    border: rgba(0, 171, 238, 1);
-    background-color:rgba(0, 171, 238, 0.1);
-    border-style: hidden hidden hidden solid;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
-
-.damages h1 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.damages h2 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.damages h3 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.damages h4 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.damages h5 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.damages h6 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-.bars {
-    border: rgba(0, 171, 238, 1);
-    background-color:rgba(0, 171, 238, 0.1);
-    border-style: hidden hidden hidden solid;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
-
-.bars h1 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.bars h2 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.bars h3 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.bars h4 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.bars h5 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.bars h6 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-.act {
-    border: rgba(0, 171, 238, 1);
-    background-color:rgba(0, 171, 238, 0.1);
-    border-style: hidden hidden hidden solid;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
-
-.act h1 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.act h2 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.act h3 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.act h4 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.act h5 {
-    color: rebeccapurple;
-    font-size: 1.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.act h6 {
-    color: rebeccapurple;
+.h {
+    color: none;
     font-size: 1.5em;
     margin-top: 16px;
     margin-bottom: 16px;
