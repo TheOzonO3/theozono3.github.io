@@ -45,6 +45,8 @@ ul {
     padding-right: 10px;
     margin-left: 0px;
     padding-left: 10px;
+    border-left-width: 0.2em;
+    border-bottom-width: 0.2em;
 }
 tr {
     vertical-align: top;
