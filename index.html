@@ -2,25 +2,24 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css.css">
-        <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/1f9cc497c9.js" crossorigin="anonymous"></script>    </head>
+        <title>Главная страница</title>
+        <link rel="stylesheet" href="classes.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://kit.fontawesome.com/1f9cc497c9.js" crossorigin="anonymous"></script>    
+    </head>
     <body>
-        <div class="main">Ozon</div>
-        <div class="small">Soon</div>
-        <span class="icons">
-            <i class="fab fa-discord"></i>
-            <a href="https://vk.com/the_ozon">
-                <i class="fab fa-vk"></i>
-            </a>
-            <i class="fab fa-telegram"></i>
-            <i class="fab fa-steam"></i>
-        </span>
-        <span class="player">
-            <i onclick="document.getElementById('audio').play()" class="fas fa-play-circle"></i>
-            <i onclick="document.getElementById('audio').pause(); console.log(document.getElementById('audio').duration)" class="fas fa-pause-circle"></i>
-            <i onclick="document.getElementById('audio').muted=!document.getElementById('audio').muted" class="fas fa-volume-mute"></i>
-            <audio loop autoplay src="audio/music.mp3" id="audio" type="audio/ogg"></audio>    
-        </span>  
+        <header>
+            <button class="btn" onClick='location.href="./index.html"'><i class="fa fa-home"></i> Главная </button>
+            <button class="btn" onClick='location.href="./classes.html"'><i class="fas fa-user-circle"></i> Персонажи </button>
+            <button class="btn" onClick='location.href="./health.html"'><i class="fas fa-heart"></i> Здоровье </button>
+            <button class="btn" onClick='location.href="./stats.html"'><i class="fas fa-calendar-plus"></i> Характеристики </button>
+            <button class="btn" onClick='location.href="./damages.html"'><i class="fas fa-calendar-plus"></i> Типы урона </button>
+            <button class="btn" onClick='location.href="./bars.html"'><i class="fas fa-calendar-plus"></i> Шкалы </button>
+            <button class="btn" onClick='location.href="./actions.html"'><i class="fas fa-calendar-plus"></i> Действия, доступные в бою </button>
+
+        </header>
+        <div>
+
+        </div>
     </body>
 </html>

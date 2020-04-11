@@ -30,6 +30,7 @@ header {
 }
 li {
     list-style-type: none;
+    margin-left: 5px;
 }
 body {
     background-color: var(--background); 
@@ -77,4 +78,25 @@ tr {
     font-size: 1.5em;
     margin-top: 16px;
     margin-bottom: 16px;
+}
+
+.tskill {
+    border-color: var(--dark);
+    border-style: none none solid solid;
+    border-width: 0.2em;
+    border-radius: 5px;
+    background-color: var(--primary);
+}
+
+.trskill {
+    vertical-align: middle;
+}
+
+.ttable {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.skillname{
+    margin-top: 5px;
 }
